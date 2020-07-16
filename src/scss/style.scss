@@ -1,0 +1,16 @@
+$top-line: #e2e2e2;
+
+BODY{
+  margin: 0;
+  bottom: 0;
+  background-image: url("../img/background/background_02.png");
+  position: center;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 7px solid $top-line;
+  max-width: 1400px;
+}
+.wrapper{
+  margin-right: 15%;
+  margin-left: 15%;
+}

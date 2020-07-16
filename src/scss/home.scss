@@ -1,0 +1,177 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/carousel";
+
+$logo-color: #474747;
+$first-nav-color: #a5a5a5;
+$second-nav-color: #474747;
+$top-line: #e2e2e2;
+
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/Helvetica Neue.ttf");
+}
+
+.carousel-indicators{
+  justify-content: left;
+  left: auto;
+  right: -50px;
+}
+.carousele__feature{
+  font-family: 'Bebas Neue', cursive;
+  width: 220px;
+  height: 70px;
+  background-color: #404040;
+  display: block;
+  position: relative;
+  top: -70px;
+  .tittle__description{
+    color: #9a9a9a;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: 20px;
+    top:10px;
+
+  }
+  .second__description{
+    font-size: 32px;
+    color: #fff;
+    margin-left: 20px;
+
+  }
+}
+.carousele__description{
+  display: block;
+  position: relative;
+  top: -70px;
+  background-color: #f4f4f4;
+  .tittle__description_carousele{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+    color: #474747;
+    margin-left: 20px;
+    padding-top: 10px;
+  }
+  .description_carousele{
+    font-family: 'Helvetica Neue', medium ;
+    color: #474747;
+    font-size: 12px;
+    margin-left: 20px;
+  }
+}
+.carousele__description:after{
+  display: block;
+  position:relative;
+  width:100%;
+  top: -105px;
+  text-align:center;
+  content : "\25B2";
+  color:#f4f4f4;
+};
+
+.current__project__cards{
+  display: flex;
+  .current__project__card{
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    .current__project__tittle{
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 40px;
+      img{
+        height: 41px;
+        width: 39px;
+      }
+      .current__project__card__tittle{
+        font-size: 32px;
+        font-family: 'Bebas Neue', cursive;
+        margin-left: 20px;
+        line-height: 90%;
+        color: #474747;
+      }
+    }
+    .current__project__card__text{
+      font-family: 'Helvetica Neue', medium ;
+      color: #707070 ;
+      font-size: 12px;
+    }
+    .current__project__fidn{
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      margin-top: 20px;
+    img{
+      height: 13px;
+      width: 18px;
+    }
+      .current__project__find__more{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 16px;
+        color: #474747;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+.portfolio{
+  margin-top: 70px;
+  .portfolio__main__tittle{
+    text-align: center;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 32px;
+    height: 1.5em;
+
+    background-image:url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB3aWR0aD0iNHB4IiBoZWlnaHQ9IjRweCIgdmlld0JveD0iMCAwIDQgNCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgNCA0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxsaW5lIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0FCQUJBQiIgc3Ryb2tlLXdpZHRoPSIwLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgeDE9IjAiIHkxPSIwIiB4Mj0iNCIgeTI9IjQiLz4NCjwvc3ZnPg0K");
+    background-repeat:repeat;
+    background-position:0 0;
+    background-size:4px 4px;
+    background-clip: padding-box;
+    span{
+      background-color: #ffffff;
+      padding: 6px 40px;
+
+    }
+  }
+  .portfolio__cards{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 200px;
+    .portfolio__card{
+      display: flex;
+      flex-direction: column;
+      margin-right: 20px;
+      .portfolio__tittle{
+        margin-top: 20px;
+        font-family: 'Bebas Neue', Serif;
+        font-size: 24px;
+        color: #474747;
+
+      }
+      .portfolio__text{
+        margin-top: 20px;
+        font-family: 'Helvetica Neue', medium ;
+        font-size: 12px;
+      }
+      .portfolio__view{
+        margin-top: 20px;
+        img{
+          height: 13px;
+          width: 18px;
+        }
+        .view__project{
+          font-family: 'Bebas Neue', cursive;
+          font-size: 16px;
+          color: #474747;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+}
+
+
