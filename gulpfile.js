@@ -49,6 +49,10 @@ function javaScript() {
     .pipe(concat('main.js'))
     .pipe(dest('dist/js'))
 }
+function copyJs() {
+  return src('src/js/includeJs/**.js')
+    .pipe(dest('dist/js/includejs'))
+}
 
 function icon() {
   return src('src/img/icon/**.png')
@@ -85,6 +89,6 @@ function serve(){
 
 
 
-exports.build = series(clear, scss, html, javaScript, icon, img, fonts, pages)
-exports.serve = series(clear, scss, html, javaScript, icon, img, pages, fonts, serve)
+exports.build = series(clear, scss, html, javaScript, icon, img, fonts, pages, copyJs)
+exports.serve = series(clear, scss, html, javaScript, icon, img, pages, fonts, copyJs, serve)
 exports.clear = clear

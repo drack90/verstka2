@@ -21,6 +21,10 @@
 @mixin second-font {
   font-family: "Helvetica Neue", medium;
 }
+@mixin primary-font{
+  font-family: 'Bebas Neue', cursive;
+  color: $tittle-color;
+}
 
 
 

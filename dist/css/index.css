@@ -23,7 +23,7 @@
   font-family: "Helvetica Neue", medium;
   color: #9e9e9e;
   background: #fff;
-  width: 65%;
+  width: 75%;
   background: #fff;
   padding-bottom: 20px; }
 
@@ -8135,3 +8135,191 @@ footer {
   margin-right: 15%;
   margin-left: 15%; }
 
+
+.tittle__container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  -moz-column-gap: 40px;
+       column-gap: 40px; }
+
+.tittle__container nav {
+  margin-top: 20px; }
+
+.tittle__container nav ul {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-left: 0; }
+
+.tittle__container nav ul li {
+  display: inline-block; }
+
+.tittle__container nav ul li a {
+  text-decoration: none;
+  font-family: 'Bebas Neue', Serif;
+  font-style: normal;
+  color: #474747;
+  font-size: 20px;
+  margin-right: 10px;
+  margin-left: 10px; }
+
+.tittle__container nav ul li .active {
+  color: #9e9e9e; }
+
+.tittle__container nav ul li:before {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align: top; }
+
+.tittle__container nav ul li:first-child:before {
+  content: none; }
+
+.work__cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  grid-column-start: auto;
+  font-style: normal;
+  background-color: #ffffff; }
+
+.work__cards .work__card {
+  width: 210px;
+  margin-bottom: 20px; }
+
+.work__cards .work__card img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }
+
+.work__cards .work__card .card__primary__tittle__text {
+  font-size: 32px;
+  font-family: 'Bebas Neue', cursive;
+  color: #474747;
+  background: #fff;
+  font-size: 18px;
+  margin-top: 20px; }
+
+.work__cards .work__card .card__second__tittle__text {
+  font-size: 18px;
+  font-family: 'Bebas Neue', Serif;
+  color: #9e9e9e;
+  font-size: 16px;
+  margin-top: -5px; }
+
+.work__cards .work__card .card__text {
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  color: #515151;
+  font-size: 12px; }
+
+.sidebar h3 {
+  font-size: 32px;
+  font-family: 'Bebas Neue', cursive;
+  color: #474747;
+  background: #fff;
+  font-style: normal;
+  font-size: 18px;
+  margin-top: 35px; }
+
+.sidebar .about__blitz .sidebar__about {
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  color: #515151;
+  font-size: 14px;
+  margin-top: 30px; }
+
+.sidebar .sidebar__categories {
+  margin-top: 30px; }
+
+.sidebar .sidebar__categories ul {
+  margin-top: 20px;
+  line-height: 15px;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0; }
+
+.sidebar .sidebar__categories li {
+  list-style-type: none;
+  text-align: left; }
+
+.sidebar .sidebar__categories a {
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  color: #474747; }
+
+.sidebar .sidebar__categories a span:after {
+  content: ")"; }
+
+.sidebar .sidebar__categories a span:before {
+  content: "("; }
+
+.sidebar__twitter .twitt {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  color: #515151; }
+
+.sidebar__twitter .twitt a {
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  color: #9e9e9e;
+  text-decoration: none; }
+
+.sidebar__twitter .twitt .date__twit {
+  margin-top: 5px;
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  font-size: 12px;
+  color: #9e9e9e; }
+
+.sidebar__twitter .sidebar__twitter__follow {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: #9e9e9e;
+  background: #fff;
+  color: #474747; }
+
+.sidebar__twitter .sidebar__twitter__follow a {
+  color: #9e9e9e;
+  text-decoration: none; }
+
+.project__pagination {
+  padding: 30px 0; }
+
+.project__pagination ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.project__pagination ul a {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  width: 30px;
+  height: 5px;
+  padding: 0;
+  margin: auto 5px;
+  background-color: rgba(71, 71, 71, 0.7); }
+
+.project__pagination ul .is-active {
+  background-color: rgba(158, 158, 158, 0.5); }
+
+.project__pagination li {
+  list-style-type: none; }
