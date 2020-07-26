@@ -1,4 +1,4 @@
-$top-line: #e2e2e2;
+@import "variable";
 
 BODY{
   margin: 0;
@@ -9,6 +9,9 @@ BODY{
   margin-left: auto;
   border-top: 7px solid $top-line;
   max-width: 1400px;
+}
+footer{
+  height: 200px;
 }
 .wrapper{
   margin-right: 15%;

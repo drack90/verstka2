@@ -1,0 +1,26 @@
+@mixin tittle-text {
+  font-size: 32px;
+  font-family: 'Bebas Neue', cursive;
+  color: $tittle-color;
+  background: #fff;
+}
+
+@mixin vacancy-text{
+  font-size: 18px;
+  font-family: 'Bebas Neue', Serif;
+  color: $second-tittle;
+}
+
+@mixin second-tittle-text {
+  font-size: 14px;
+  font-family: "Helvetica Neue", medium;
+  color: $second-tittle;
+  background: #fff;
+}
+
+@mixin second-font {
+  font-family: "Helvetica Neue", medium;
+}
+
+
+

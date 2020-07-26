@@ -2,7 +2,7 @@
 //подключаем в работу GULP все установленные пакеты
 const {src, dest, series, watch} = require('gulp') //подключаем только методы а не весь gulp
 const sass = require('gulp-sass')
-const csso = require('gulp-csso')
+const csso = require('gulp-csso') //производит минификацию css файла
 const include = require('gulp-file-include')
 const htmlmin = require('gulp-htmlmin')
 const del = require('del')
@@ -16,7 +16,7 @@ const sync = require('browser-sync').create() //используем метод 
 
 //собирает html файлы по префиксу и переносит в папку dist
 function html() {
-  return src('src/**.html')
+  return src('src/**/**.html')
     .pipe(include({
       prefix: '@@'
     }))
@@ -36,7 +36,7 @@ function scss(){
     .pipe(autoprefixer({
       overrideBrowserslist: ['defaults']
     }))
-    .pipe(csso())
+    // .pipe(csso()) ----минифицирует файл
     .pipe(concat('index.css'))
     .pipe(dest('dist/css'))
 }
