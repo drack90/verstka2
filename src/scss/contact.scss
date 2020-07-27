@@ -1,0 +1,64 @@
+@import "variable";
+@import "mixins";
+
+.wrapper{
+}
+.contact__information{
+  margin-top: 20px;
+  @include second-tittle-text;
+  font-size: 14px;
+  color: $tittle-color;
+  font-style: normal;
+  width: 100%;
+}
+
+.contact__form{
+  margin-top: 30px;
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  input{
+    margin-top: 10px;
+    width: 50%;
+    font-family: $bebas;
+    font-style: normal;
+    font-size: 16px;
+    padding-left: 20px;
+    text-transform: uppercase;
+    height: 35px;
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+  }
+  textarea{
+    margin-top: 10px;
+    width: 80%;
+    font-family: $bebas;
+    font-style: normal;
+    font-size: 16px;
+    padding: 20px;
+    text-transform: uppercase;
+    height: 200px;
+    background-color: #fafafa;
+    border: 1px solid #eeeeee;
+  }
+  .submit__button{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    img{
+      height: 15px;
+      width: 18px;
+      padding-top: 3px;
+    }
+    a{
+      text-decoration: none;
+      font-family: 'Bebas Neue', cursive;
+      font-style: normal;
+      font-size: 16px;
+      color: $tittle-color !important;
+      margin-left: 5px;
+
+    }
+  }
+}
